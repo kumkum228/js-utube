@@ -30,9 +30,35 @@
 // }
 // console.log(Vamp);
 
-const myFunction = function() {
-    console.log("Hello");    
+// const myFunction = function() {
+//     console.log("Hello world");    
+// }
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack(Primitive), Heap(Non-Primitive)
+
+// let myYoutubename = "kkdotcom"
+// let anotherName = myYoutubename
+// anotherName = "ranidotcom"
+
+// console.log(myYoutubename);
+// console.log(anotherName);
+
+let userOne = {
+    email: "kk@gmail.com",
+    upi: "kk@ybl"
 }
+
+let userTwo = userOne
+userTwo.email = "rani@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+
+
 
 
 
