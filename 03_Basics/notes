@@ -1,17 +1,17 @@
-JavaScript Execution Context:
-{} --> Global Execution Context
-            |
-            |__this
+// JavaScript Execution Context:
+// {} --> Global Execution Context
+//             |
+//             |__this
 
-Function/Functional Execution Context
-Eval Execution Context - no need to know
+// Function/Functional Execution Context
+// Eval Execution Context - no need to know
 
-Q. How to execute JavaScript code?
-A: Generally, code can be run in two part.
-   1. Memory Creation Phase or Creation Phase
-      Allocate the space to the declared variable not execute.
-   2. Execution Phase - Perform all types of execution. 
-      Ex- addition, subtraction, etc. 
+// Q. How to execute JavaScript code?
+// A: Generally, code can be run in two part.
+//    1. Memory Creation Phase or Creation Phase
+//       Allocate the space to the declared variable not execute.
+//    2. Execution Phase - Perform all types of execution. 
+//       Ex- addition, subtraction, etc. 
 
 let val1 = 10
 let val2 = 5
