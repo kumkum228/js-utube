@@ -20,5 +20,38 @@ function addNum(num1, num2) {
     return total 
 }
 let result1 = addNum(val1, val2)
-let result2 = addNum(10, 2)
+let result2 = addNum(10, 2) 
+
+1. Global Execution --> this
+2. Memory Phase
+    Val1 --> undefined
+    Val2 --> undefined
+    addNum --> definition
+    result1 --> undefined
+    result2 --> undefined
+3. Execution Phase
+    Val1 --> 10
+    Val2 --> 5 __________________
+    addNum -->| new variable     |
+              | environment      | <-- addNum 
+              |     +            | result1 = 15
+              | execution thread | result2 = addNum
+               ------------------  
+                        ^
+addNum:                 |    
+a. Memory Phase:
+Val1 --> undefined
+Val2 --> undefined
+total --> undefined
+b. Execution Context:
+num1 --> 10
+num2 --> 5
+total --> 15
+
+
+
+
+              
+
+
            
