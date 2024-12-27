@@ -8,5 +8,5 @@
 ## Project 1
 
 ```javascript
-console.log("Kumkum Kumari")
+console.log("Kumkum")
 ```
