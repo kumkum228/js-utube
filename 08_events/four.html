@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sync and JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>   
+</body>
+<script>
+
+    const writeMyName = function () {
+        console.log("Kumkum");    
+    };
+
+    let intervalId;
+    const startIncreasingName = function () {
+    if (!intervalId) {
+        intervalId = setInterval(writeMyName, 1000);
+    }
+    };
+    const stopName = function () {
+    clearInterval(intervalId);
+    intervalId = null;
+    };
+
+    document.querySelector('#start').addEventListener('click', startIncreasingName);
+    document.querySelector('#stop').addEventListener('click', stopName);
+    
+</script>
+</html>
