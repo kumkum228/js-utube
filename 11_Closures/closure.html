@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: aqua;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    document.getElementById("orange").onclick = function(){
+        document.body.style.backgroundColor = `orange`
+    }
+    document.getElementById("green").onclick = function(){
+        document.body.style.backgroundColor = `green`
+    }
+</script>
+<script>
+
+    // Lexical Scoping(Closures):
+
+    // Ex1:
+    // function init() {
+    //     let name = "Mozilla"; // name is a local variable created by init()
+    //     function displayName() { // displayName() is the inner function, that forms the closure
+    //         console.log(name);  // use variable declared in the parent function          
+    //     }
+    //     displayName();
+    // }
+    // init(); 
+
+    // Ex2:
+    // function outer(){
+    //     let username = "Kumkum"
+    //     function inner(){
+    //         console.log("Name: ", username);            
+    //     }
+    //     inner()
+    // }
+    // outer()
+    // console.log("Too Outer", username);
+
+    // Ex3:
+    // function outer(){
+    //     let username = "Kumkum"
+    //     function inner(){
+    //         console.log("Inner One: ", username);            
+    //     }
+    //     function innerTwo(){
+    //         console.log("Inner Two: ", username);
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()
+    // console.log("Too Outer", username);
+
+    // Ex4:
+    // function outer(){
+    //     let username = "Kumkum"
+    //     // console.log(secret);
+
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("Inner One: ", username);            
+    //     }
+    //     function innerTwo(){
+    //         console.log("Inner Two: ", username);
+    //         // console.log(secret);
+            
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()
+
+    // Closure
+    // Ex1:
+    // function makeFunc() {
+    //     const name = "Mozilla-Firefox";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+    // const myFunc = makeFunc();
+    // myFunc();
+
+</script>
+</html> 
