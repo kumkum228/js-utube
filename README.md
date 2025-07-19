@@ -1,2 +1,2 @@
 # js-utube
-JavaScript course files
+JavaScript course files and practice work
